@@ -1,0 +1,84 @@
+/* ------------------ Fonts ------------------ */
+@font-face {
+  font-family: "Open_Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"),
+    url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"),
+    url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+}
+
+@font-face {
+  font-family: "DM_Sans";
+  src: url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Open+Sans:wght@700&display=swap"),
+    url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,700&family=Open+Sans:wght@700&display=swap");
+}
+
+:root {
+  /*------------------Font-family------------------------------*/
+  --ff-open-sans: "Open_Sans", sans-serif;
+  --ff-dm-sans: "DM_Sans", sans-serif;
+
+  /* ------------------ Colors ------------------ */
+  --color-black: #000000;
+  --color-graffit: #303030;
+
+  /* ------------------ Background ------------------ */
+  --bg-cream: #fff4eb;
+  --bg-graffit: #303030;
+  --bg-dark-cream: #ca9277;
+}
+
+/*------------------Default style------------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+  line-height: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+}
+
+button {
+  padding: 0;
+  line-height: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  color: inherit;
+  background-color: transparent;
+}
