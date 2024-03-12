@@ -27,7 +27,7 @@
   --bg-dark-cream: #ca9277;
 }
 
-/*------------------Default style------------------------------*/
+/*------------------ Default style ------------------------------*/
 
 * {
   padding: 0;
@@ -81,4 +81,184 @@ button {
   cursor: pointer;
   color: inherit;
   background-color: transparent;
+}
+
+body {
+  font-family: "Open_Sans", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+  background-image: url(/img/mahesh-mv.jpg);
+  background-size: cover;
+}
+
+/*----------------- HeaderTop-section -----------------*/
+
+.header {
+  /* background: rgba(0, 0, 0, 0.3) url(../img/Background/Man_with_telescope.jpg) no-repeat center;
+    background-size: cover; */
+  padding: 67px 75px 44px 75px;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header__container {
+  height: 128px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.header-logo {
+  font-family: var(--ff-open-sans), sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-list + .menu-list {
+  margin-left: 50px;
+}
+
+.menu-link {
+  font-family: var(--ff-open-sans), sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.search {
+  cursor: text;
+}
+
+.search-input {
+  background-color: inherit;
+  width: 85px;
+  height: 20px;
+  color: #fff;
+  border: none;
+  position: relative;
+  background-image: url(/img/search.svg);
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: left;
+  outline: 0;
+  transition: 0.3s;
+}
+
+.search-input::placeholder {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  font-size: 17px;
+  font-style: normal;
+  font-family: var(--ff-open-sans), sans-serif;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*----------------- HeaderBottom-section -----------------*/
+.header-bottom__container {
+  padding: 156px 0 614px 0;
+}
+
+.header-bottom__text {
+  margin-left: 520px;
+  color: #ffc178;
+  font-family: var(--ff-open-sans), sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.header-bottom__text::before {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 2px;
+  background-color: #ffc178;
+  left: -105px;
+  top: 8px;
+  z-index: 502;
+}
+
+.header-bottom__description {
+  display: flex;
+  justify-content: space-between;
+  width: 967px;
+  padding: 50px 0 100px 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.social-link p {
+  padding-top: 25px;
+}
+
+.social-text {
+  font-weight: 600;
+  rotate: 90deg;
+  transform: translateY(15px);
+}
+
+.header-bottom__title {
+  width: 555px;
+  font-size: 88px;
+  font-weight: 400;
+  font-family: var(--ff-open-sans), sans-serif;
+  line-height: 100px;
+}
+
+.header-bottom__title span {
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.header-bottom__scroll {
+  display: block;
+  margin: 0 auto;
+  width: 123px;
+  cursor: pointer;
+  position: relative;
+}
+
+.header-bottom__scroll::after {
+  position: absolute;
+  content: url(/img/arrow_down.svg);
+  right: 0;
+  top: 4px;
+  width: 16px;
+  height: 24px;
 }
