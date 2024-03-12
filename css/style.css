@@ -84,30 +84,30 @@ button {
 }
 
 body {
-  font-family: "Open_Sans", serif;
+  font-family: "Open_Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   color: white;
   background-image: url(/img/mahesh-mv.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+}
+
+.page {
+  max-width: 1460px;
+  margin: 0 auto;
 }
 
 /*----------------- HeaderTop-section -----------------*/
 
-.header {
-  /* background: rgba(0, 0, 0, 0.3) url(../img/Background/Man_with_telescope.jpg) no-repeat center;
-    background-size: cover; */
-  padding: 67px 75px 44px 75px;
+.header__container {
+  padding: 67px 75px 714px 75px;
 }
 
 .container {
   max-width: 1920px;
   margin: 0 auto;
-}
-
-.header__container {
-  height: 128px;
 }
 
 .header-top {
@@ -177,13 +177,15 @@ body {
 
 /*----------------- HeaderBottom-section -----------------*/
 .header-bottom__container {
-  padding: 156px 0 614px 0;
+  padding-top: 156px;
 }
 
 .header-bottom__text {
   margin-left: 520px;
+}
+
+.about-text {
   color: #ffc178;
-  font-family: var(--ff-open-sans), sans-serif;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 6px;
@@ -191,7 +193,7 @@ body {
   position: relative;
 }
 
-.header-bottom__text::before {
+.about-text::before {
   content: "";
   position: absolute;
   width: 72px;
@@ -261,4 +263,47 @@ body {
   top: 4px;
   width: 16px;
   height: 24px;
+}
+
+/*----------------- Fort-section -----------------*/
+.fort {
+}
+
+.fort__container {
+  padding: 150px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fort-desription {
+  max-width: 632px;
+}
+.fort_text {
+  margin-left: 105px;
+}
+.fort-title {
+  font-size: 64px;
+  font-weight: 700;
+  padding: 50px 0;
+}
+
+.fort-about {
+  font-weight: 600;
+  line-height: 32px;
+  padding-bottom: 30px;
+}
+
+.read-more {
+  color: #fbd784;
+  font-weight: 700;
+  position: relative;
+}
+
+.read-more::after {
+  position: absolute;
+  content: url(/img/arrow_right.svg);
+  right: -40px;
+  bottom: 8px;
+  height: 16px;
+  width: 24px;
 }
