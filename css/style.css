@@ -92,6 +92,7 @@ body {
   background-image: url(/img/mahesh-mv.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #000000;
 }
 
 .page {
@@ -201,7 +202,7 @@ body {
   background-color: #ffc178;
   left: -105px;
   top: 8px;
-  z-index: 502;
+  z-index: 5;
 }
 
 .header-bottom__description {
@@ -266,9 +267,6 @@ body {
 }
 
 /*----------------- Fort-section -----------------*/
-.fort {
-}
-
 .fort__container {
   padding: 150px 0;
   display: flex;
@@ -281,7 +279,7 @@ body {
 .fort_text {
   margin-left: 105px;
 }
-.fort-title {
+.title {
   font-size: 64px;
   font-weight: 700;
   padding: 50px 0;
@@ -306,4 +304,72 @@ body {
   bottom: 8px;
   height: 16px;
   width: 24px;
+}
+
+/*----------------- Temple-section -----------------*/
+
+.temple {
+  background-image: url(/img/Dagdusheth\ Halwai.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 600px 0 50px 0;
+  margin: 150px 0;
+}
+
+.temple__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temple_text {
+  position: relative;
+}
+
+.temple_text::after {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 2px;
+  background-color: #ffc178;
+  right: -104px;
+  top: 8px;
+  z-index: 5;
+}
+
+.temple-title {
+  max-width: 780px;
+  text-align: center;
+  line-height: normal;
+}
+
+.temple-about {
+  max-width: 934px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/*----------------- People-section -----------------*/
+.people {
+}
+.people__container {
+  padding: 150px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.people-desription {
+}
+.people_text {
+  margin-left: 105px;
+}
+.people-title {
+  max-width: 555px;
+  line-height: normal;
+}
+
+.people-about {
+  max-width: 555px;
+  line-height: 32px;
+  padding-bottom: 30px;
 }
