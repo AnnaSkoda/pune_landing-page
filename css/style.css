@@ -1,15 +1,13 @@
 /* ------------------ Fonts ------------------ */
 @font-face {
   font-family: "Open_Sans";
-  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"),
-    url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"),
-    url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+  src: local("Open_Sans"), url(/fonts/OpenSans-Bold.ttf) format("ttf"), url(/fonts/OpenSans-Regular.ttf) format("ttf"),
+    url(/fonts/OpenSans-SemiBold.ttf) format("ttf");
 }
 
 @font-face {
   font-family: "DM_Sans";
-  src: url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Open+Sans:wght@700&display=swap"),
-    url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,700&family=Open+Sans:wght@700&display=swap");
+  src: local("DM_Sans"), url(/fonts/DMSans-Bold.ttf) format("ttf"), url(/fonts/DMSans-Regular.ttf) format("ttf");
 }
 
 :root {
@@ -89,7 +87,7 @@ body {
   font-size: 18px;
   line-height: 32px;
   color: white;
-  background-image: url(/img/mahesh-mv.jpg);
+  background-image: url(/img/gradient.png), url(/img/mahesh-mv.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
