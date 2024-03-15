@@ -129,16 +129,33 @@ body {
 .menu-list + .menu-list {
   margin-left: 50px;
 }
+.menu-list a {
+  position: relative;
+}
+
+.menu-list a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -5px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ffd1a0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.menu-list a:hover:after {
+  width: 100%;
+  left: 0;
+}
 
 .menu-link {
   font-family: var(--ff-open-sans), sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
-}
-
-.menu-link:hover {
-  text-decoration: underline;
 }
 
 .search {
@@ -203,17 +220,20 @@ body {
 .header-bottom__description {
   display: flex;
   justify-content: space-between;
+  align-items: start;
   width: 967px;
   padding: 50px 0 100px 0;
 }
 
-.social-block {
-}
-
 .follow {
-  display: inline;
+  margin-top: 15px;
+  padding-left: 14px;
+}
+.follow-text {
+  writing-mode: vertical-rl;
+
   font-weight: 600;
-  text-align: left;
+  line-height: normal;
 }
 
 .social-list {
@@ -252,10 +272,6 @@ body {
 .social:hover {
   box-shadow: 0 0 11px #ffa343;
   border-radius: 3px;
-}
-
-.follow-text {
-  font-weight: 600;
 }
 
 .header-bottom__title {
@@ -523,6 +539,25 @@ body {
   font-size: 19px;
   font-weight: 400;
   letter-spacing: -0.2px;
+  position: relative;
+}
+
+.info-link a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #ffd1a0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.info-link a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 /*----------------- Footer-block3 -----------------*/
@@ -536,6 +571,28 @@ body {
 .block3__terms {
   display: flex;
   gap: 80px;
+}
+
+.block3__terms a {
+  position: relative;
+}
+
+.block3__terms a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #ffd1a0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.block3__terms a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .block3__social-link {
