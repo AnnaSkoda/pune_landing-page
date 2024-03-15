@@ -9,5 +9,5 @@ for (let anchor of anchors) {
             block:"start"
         })
     })
-}
+};
 

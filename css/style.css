@@ -158,10 +158,6 @@ body {
   line-height: normal;
 }
 
-.search {
-  cursor: text;
-}
-
 .search-input {
   background-color: inherit;
   width: 85px;
@@ -174,6 +170,7 @@ body {
   background-size: 15px 15px;
   background-position: left;
   outline: 0;
+  padding-left: 20px;
   transition: 0.3s;
 }
 
@@ -330,6 +327,8 @@ body {
 }
 
 .read-more {
+  display: block;
+  width: 130px;
   color: #fbd784;
   font-weight: 700;
   position: relative;
@@ -338,10 +337,15 @@ body {
 .read-more::after {
   position: absolute;
   content: url(/img/arrow_right.svg);
-  right: -40px;
-  bottom: 8px;
+  right: 0px;
+  bottom: 14px;
   height: 16px;
   width: 24px;
+  transition: 0.4s;
+}
+
+.read-more:hover {
+  font-size: 19px;
 }
 
 /*----------------- Temple-section -----------------*/
@@ -388,8 +392,6 @@ body {
 }
 
 /*----------------- People-section -----------------*/
-.people {
-}
 .people__container {
   padding: 150px 0;
   display: flex;
