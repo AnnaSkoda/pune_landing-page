@@ -93,8 +93,13 @@ body {
   background-color: #000000;
 }
 
+.owerlay {
+  overflow: hidden;
+}
+
 .page {
   max-width: 1460px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -102,11 +107,13 @@ body {
 
 .header__container {
   max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
   padding: 67px 75px 714px 75px;
 }
 
 .header-top {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -185,13 +192,64 @@ body {
   line-height: normal;
 }
 
+.header-top.header-top__fixed {
+  position: fixed;
+  padding: 20px 80px;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #1c1506d1;
+}
+
+.mobile-menu {
+  display: none;
+  z-index: 50;
+  position: relative;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.mobile-menu span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #ffc178;
+  transition: all 0.4s ease;
+}
+
+.mobile-menu span:last-child {
+  bottom: 0;
+}
+
+.mobile-menu span:last-child.active,
+.mobile-menu span:first-child.active {
+  opacity: 0;
+}
+
+.mobile-menu span:nth-child(2),
+.mobile-menu span:nth-child(3) {
+  top: 50%;
+}
+
+.mobile-menu span:nth-child(2).active {
+  transform: rotate(45deg);
+}
+
+.mobile-menu span:nth-child(3).active {
+  transform: rotate(135deg);
+}
+
 /*----------------- HeaderBottom-section -----------------*/
 .header-bottom__container {
   padding-top: 156px;
 }
 
 .header-bottom__text {
-  margin-left: 520px;
+  left: 104px;
+  top: -50px;
 }
 
 .about-text {
@@ -209,16 +267,16 @@ body {
   width: 72px;
   height: 2px;
   background-color: #ffc178;
-  left: -105px;
+  left: -104px;
   top: 8px;
-  z-index: 5;
 }
 
 .header-bottom__description {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  width: 967px;
+  max-width: 967px;
+  width: 100%;
   padding: 50px 0 100px 0;
 }
 
@@ -226,9 +284,9 @@ body {
   margin-top: 15px;
   padding-left: 14px;
 }
+
 .follow-text {
   writing-mode: vertical-rl;
-
   font-weight: 600;
   line-height: normal;
 }
@@ -263,7 +321,7 @@ body {
 
 .social-list a:hover img {
   transform: scale(0.7);
-  transition: transform 0.5s;
+  transition: 0.5s;
 }
 
 .social:hover {
@@ -277,6 +335,7 @@ body {
   font-weight: 400;
   font-family: var(--ff-open-sans), sans-serif;
   line-height: 100px;
+  margin-right: 15px;
 }
 
 .header-bottom__title span {
@@ -303,14 +362,18 @@ body {
 
 /*----------------- Fort-section -----------------*/
 .fort__container {
-  padding: 150px 0;
+  padding: 150px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
 }
+
 .fort-desription {
   max-width: 632px;
+  width: 50%;
 }
+
 .fort_text {
   margin-left: 105px;
 }
