@@ -496,7 +496,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 124px 0 62px 0;
+  padding: 124px 15px 62px 15px;
 }
 
 .footer_started {
@@ -506,6 +506,7 @@ body {
   align-items: center;
   gap: 54px;
 }
+
 .footer_started p {
   font-size: 22px;
   font-family: var(--ff-dm-sans);
@@ -540,8 +541,10 @@ body {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  padding: 80px 0 70px 0;
+  gap: 60px;
+  padding: 80px 15px 70px 15px;
 }
+
 .footer__block2-title {
   max-width: 240px;
   font-size: 36px;
@@ -553,14 +556,16 @@ body {
 
 .footer__block2-email {
   cursor: text;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   display: flex;
   align-items: center;
 }
 
 .input-email {
   background-color: inherit;
-  width: 330px;
+  max-width: 330px;
+  width: 100%;
   height: 67px;
   color: #fff;
   border: none;
@@ -681,7 +686,7 @@ body {
 
 /*----------------- Copyright -----------------*/
 .copyright {
-  padding: 90px 0 130px 0;
+  padding: 90px 0 100px 0;
   text-align: center;
   font-weight: 600;
   line-height: 32px;
