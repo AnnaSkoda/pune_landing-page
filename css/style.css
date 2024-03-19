@@ -248,7 +248,7 @@ body {
 }
 
 .header-bottom__text {
-  left: 104px;
+  margin-left: 104px;
   top: -50px;
 }
 
@@ -330,7 +330,7 @@ body {
 }
 
 .header-bottom__title {
-  width: 555px;
+  max-width: 555px;
   font-size: 88px;
   font-weight: 400;
   font-family: var(--ff-open-sans), sans-serif;
@@ -377,6 +377,7 @@ body {
 .fort_text {
   margin-left: 105px;
 }
+
 .title {
   font-size: 64px;
   font-weight: 700;
@@ -417,8 +418,10 @@ body {
   background-image: url(/img/Dagdusheth\ Halwai.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 600px 0 50px 0;
-  margin: 150px 0;
+  background-position: center;
+  padding: 600px 15px 50px 15px;
+  margin: 150px 15px;
+  /* width: 95%; */
 }
 
 .temple__container {
@@ -439,7 +442,6 @@ body {
   background-color: #ffc178;
   right: -104px;
   top: 8px;
-  z-index: 5;
 }
 
 .temple-title {
@@ -456,19 +458,24 @@ body {
 
 /*----------------- People-section -----------------*/
 .people__container {
-  padding: 150px 0;
+  padding: 150px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 45px;
 }
+
 .people-desription {
   margin-left: 40px;
 }
+
 .people_text {
   margin-left: 105px;
 }
+
 .people-title {
   max-width: 555px;
+  width: 100%;
   line-height: normal;
 }
 
